@@ -39,6 +39,11 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### Vulnerability Detection
+
+To detect the vulnerabilities, you can open the file "Vulnerability_Detection.py". Then replace the version in the file according to your smart contract version, followed by the path of your smart contract in the main function. Click on the "Run" button to start the detection process.
+You can see the generated vulnerability detection report on the terminal.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
