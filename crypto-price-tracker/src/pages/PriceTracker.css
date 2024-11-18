@@ -1,0 +1,211 @@
+.price-tracker-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    color: white;
+    font-size: 28px;
+  }
+  
+  .connect-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+  }
+  
+  .connect-button:hover {
+    background-color: #1976d2;
+  }
+  
+  .connect-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .account-info {
+    background-color: #f5f5f5;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #666666;
+  }
+  
+  .connect-prompt {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    color: #666666;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .currency-controls {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .currency-selector {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .currency-selector select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  .update-all-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  .update-all-button:hover {
+    background-color: #388e3c;
+  }
+  
+  .update-all-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .price-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .price-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .price-card h2 {
+    margin: 0;
+    color: #1a1a1a;
+  }
+  
+  .update-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  .update-button:hover {
+    background-color: #1976d2;
+  }
+  
+  .update-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .current-price {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 16px 0;
+    color: #1a1a1a;
+  }
+  
+  .price-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .change-percent {
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  .change-percent.positive {
+    color: #4caf50;
+    background-color: rgba(76, 175, 80, 0.1);
+  }
+  
+  .change-percent.negative {
+    color: #f44336;
+    background-color: rgba(244, 67, 54, 0.1);
+  }
+  
+  .high-low {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #666666;
+  }
+  
+  .volume {
+    color: #666666;
+  }
+  
+  .chart-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .price-details {
+      grid-template-columns: 1fr;
+    }
+    
+    .header {
+      flex-direction: column;
+      gap: 16px;
+      text-align: center;
+    }
+    
+    .currency-controls {
+      flex-direction: column;
+    }
+    
+    .currency-selector {
+      max-width: 100%;
+    }
+  }
